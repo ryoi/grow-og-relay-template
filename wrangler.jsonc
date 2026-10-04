@@ -1,0 +1,38 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "my-grow-relay",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-07-23",
+  "workers_dev": true,
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 0.05
+  },
+  "secrets": {
+    "required": ["OWNER_KEY", "TURN_API_TOKEN"]
+  },
+  "vars": {
+    "ALLOWED_ORIGINS": "https://og.grow.ryoi.ai,https://sottli.ryoi.ai",
+    "RELAY_ID": "my-private-relay",
+    "RELAY_NAME": "My private relay",
+    "TURN_TOKEN_ID": "PASTE_YOUR_32_CHARACTER_TURN_TOKEN_ID"
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "SIGNAL_ROOMS",
+        "class_name": "SignalRoom"
+      },
+      {
+        "name": "RELAY_GATEWAY",
+        "class_name": "RelayGateway"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["SignalRoom", "RelayGateway"]
+    }
+  ]
+}

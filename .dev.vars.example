@@ -1,0 +1,5 @@
+# Copy the private setup key generated in grow.
+OWNER_KEY=
+
+# Cloudflare shows this token once when you create a Realtime TURN key.
+TURN_API_TOKEN=
