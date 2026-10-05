@@ -12,7 +12,7 @@
     "required": ["OWNER_KEY", "TURN_API_TOKEN"]
   },
   "vars": {
-    "ALLOWED_ORIGINS": "https://og.grow.ryoi.ai,https://sottli.ryoi.ai",
+    "ALLOWED_ORIGINS": "https://grow.og.ryoi.ai,https://og.grow.ryoi.ai,https://sottli.ryoi.ai",
     "RELAY_ID": "my-private-relay",
     "RELAY_NAME": "My private relay",
     "TURN_TOKEN_ID": "PASTE_YOUR_32_CHARACTER_TURN_TOKEN_ID"

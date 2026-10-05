@@ -18,8 +18,9 @@ grow. Do not share the `OWNER_KEY` or TURN API token.
 
 [Deploy to Cloudflare](https://deploy.workers.cloudflare.com/?url=https://github.com/ryoi/grow-og-relay-template/tree/main)
 
-The default browser origins are `https://og.grow.ryoi.ai` and
-`https://sottli.ryoi.ai`. Add an origin only for a frontend you control; do not
+The default browser origins include the fresh app at `https://grow.og.ryoi.ai`
+and the retained `https://og.grow.ryoi.ai` and `https://sottli.ryoi.ai` origins.
+Add an origin only for a frontend you control; do not
 use a wildcard. This template creates a separate personal relay, not a copy
 of the application's database or managed service.
 
